@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="theme1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="Css/styles.css" />
+    <script src="Js/script.js" defer></script>
+
+    <title>Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <section class="calc-heading">
+        <h1>Calc</h1>
+        <div class="toggle-right">
+          <div class="toggle-num">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <div class="toggle-container">
+            <h4>Theme</h4>
+            <div class="tri-state-toggle">
+              <input class="button" type="radio" name="toggle" id="one" />
+              <input class="button" type="radio" name="toggle" id="two" />
+              <input class="button" type="radio" name="toggle" id="three" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="display">
+        <div class="current-input"></div>
+      </section>
+
+      <section class="button-keys">
+        <div class="buttons">
+          <div class="num">
+            <button type="button" class="num_btn" value="7">7</button>
+          </div>
+          <div class="num">
+            <button type="button" class="num_btn" value="8">8</button>
+          </div>
+          <div class="num">
+            <button type="button" class="num_btn" value="9">9</button>
+          </div>
+          <div class="num del">
+            <button type="button" data-action="clear" class="clear">DEL</button>
+          </div>
+
+          <div class="num">
+            <button type="button" class="num_btn" value="4">4</button>
+          </div>
+          <div class="num">
+            <button type="button" class="num_btn" value="5">5</button>
+          </div>
+          <div class="num">
+            <button type="button" class="num_btn" value="6">6</button>
+          </div>
+          <div class="num plus">
+            <button type="button" class="key-operator" value="+">+</button>
+          </div>
+
+          <div class="num one">
+            <button type="button" class="num_btn" value="1">1</button>
+          </div>
+          <div class="num">
+            <button type="button" class="num_btn" value="2">2</button>
+          </div>
+          <div class="num">
+            <button type="button" class="num_btn" value="3">3</button>
+          </div>
+          <div class="num minus">
+            <button type="button" class="key-operator" value="-">-</button>
+          </div>
+
+          <div class="num dot">
+            <button type="button" data-action="decimal" class="decimal">
+              .
+            </button>
+          </div>
+          <div class="num">
+            <button type="button" class="num_btn" value="0">0</button>
+          </div>
+          <div class="num">
+            <button type="button" class="key-operator" value="/">/</button>
+          </div>
+          <div class="num">
+            <button type="button" class="key-operator" value="*">*</button>
+          </div>
+        </div>
+        <div class="special-buttons">
+          <div class="reset">
+            <button type="button" class="reset" data-action="erase">
+              reset
+            </button>
+          </div>
+          <div class="equal">
+            <button type="button" class="key-operator" data-action="calculate">
+              =
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
